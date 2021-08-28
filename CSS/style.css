@@ -20,29 +20,29 @@ body{
   flex-wrap: wrap;
   border-radius: 20px;
   justify-content: center;
-  box-shadow: 0px 1px 50px #aaaaaa
+  box-shadow: 0px 3px 30px #adadad
 }
-.container .hero{
+.container header{
   width: 100%;
   height: 30%;
 }
-.container .hero img{
+.container header img{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
   height: 100%;
 }
-.container .content{
+.container article{
   text-align: center;
   margin: 0 10%;
   height: 30%;
 }
-.content h1{
+article h1{
   font-size: 25px;
   color: hsl(223, 47%, 23%);
   margin: 5%;
 }
-.content p{
+article p{
   color: hsl(224, 23%, 55%);
   line-height: 1.6;
   font-size: 15px;
@@ -54,18 +54,19 @@ body{
   margin: 0 10% 0 10%;
   padding: 5%;
   border-radius: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 16% 39% 10% 25%;
+  grid-template-areas: 'img aplan whole a';
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
+  overflow: hidden;
 }
 .container .plan img{
-  width: 16%;
+  grid-area: img;
   height: 90%;
 }
 .plan .aplan{
-  margin: 0 0 0 -30px;
+  grid-area: aplan;
 }
 .plan .aplan h4{
   color: hsl(223, 47%, 23%);
@@ -75,6 +76,7 @@ body{
 }
 .plan a{
   color: hsl(245, 75%, 52%);
+  grid-area: a;
   font-weight: bold;
 }
 .plan a:hover{
@@ -90,14 +92,14 @@ body{
   height: 7%;
   border: 0;
   border-radius: 10px;
-  box-shadow: 0px 1px 20px #aaaaaa;
+  box-shadow: 0px 1px 15px #aaaaaa;
   cursor: pointer;
 }
 .pay:hover{
-  background-color: hsl(231, 61%, 62%);
+  background-color: hsl(245, 69%, 60%);
 }
 .container .cancel{
-  color: hsl(184, 6%, 53%);
+  color: hsl(189, 6%, 45%);
   font-size: 15px;
   font-weight: 600;
   background-color: inherit;
@@ -113,12 +115,13 @@ body{
   .container{
     width: 90%;
     margin: 40px 5%;
-    box-shadow: 0px 1px 30px #aaaaaa
+    box-shadow: 0px 1px 25px #aaaaaa
   }
 }
 @media only screen and (max-device-width: 470px){
   .container{
     width: 90%;
     margin: 40px 5%;
+    box-shadow: 0px 1px 25px #aaaaaa
   }
 }
