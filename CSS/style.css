@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 body{
-  background-image: url(images/pattern-background-desktop.svg);
+  background-image: url(../images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-color:  hsl(225, 100%, 94%);
@@ -117,11 +117,25 @@ article p{
     margin: 40px 5%;
     box-shadow: 0px 1px 25px #aaaaaa
   }
+  body{
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:  hsl(225, 100%, 94%);
+    height: 100%;
+  }
 }
 @media only screen and (max-device-width: 470px){
   .container{
     width: 90%;
     margin: 40px 5%;
     box-shadow: 0px 1px 25px #aaaaaa
+  }
+  body{
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:  hsl(225, 100%, 94%);
+    height: 100%;
   }
 }
