@@ -21,6 +21,7 @@ you can try it from here:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- CSS Grid
 
 
 
